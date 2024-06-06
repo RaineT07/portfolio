@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raine Taber</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script type="module" src="./src/index.js"></script>
+</head>
+<body>
+    <div id="topbarPlaceholder"></div>
+    <div id="topbar">
+        <div id="menu">
+            <ul id="menuOptions">
+                <li class="menuOption" id="about-option">   About       </li>
+                <li class="menuOption" id="contact-option"> Contact Info</li>
+                <li class="menuOption" id="project-option"> Projects    </li>
+                <li class="menuOption" id="resume-option">  Resume      </li>
+                <li class="menuOption" id="gallery-option">  Gallery     </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="about">
+        <div id="biography">
+            <p id="bio-intro">Hi, my name is</p>
+            <h3 id="bioTitle">Raine Taber.</h3>
+            <p id="bio-text">I am a recent graduate of Rochester Institute of Technology with a degree in New Media Interactive Development. I have strong experience in building web-friendly applications, as well as digital generative art. 
+                When I'm not developing my applications, I enjoy cooking, travel, and poetry. My favorite work so far I've completed is Extending the Body, which you can try for yourself <a href="https://openprocessing.org/sketch/2069611">here.</a> 
+                Currently, I am looking for a full time position in the Capital region of New York, and I am open to remote work as well.</p>
+        </div>
+        <div id="self-image">
+            <img src="./media/finalProfile.jpg" alt="picture of me!">
+        </div>
+    </div>
+    <div id="resumeContact">
+        <div id="contact">
+            <h3>Contact Info</h3>
+            <ul id="contactList">
+                <li class="contactInfo">Email: <a href="mailto:taberraine@gmail.com">taberraine@gmail.com</a></li>
+                <li class="contactInfo">Phone: <a href="tel:5185985321">(518)-598-5321</a></li>
+                <li class="contactInfo">LinkedIn: <a href="https://www.linkedin.com/in/raine-taber-0b1b3b1b9/">linkedin.com</a></li>
+                <li class="contactInfo">GitHub: <a href="https://github.com/RaineT07">github.com</a></li>
+            </ul>
+        </div>
+        <div id="resume">
+            <a href="./media/2024 resume.pdf">View my resume!</a>
+        </div>
+    </div>
+    <div id="projects-wrapper">
+        <h4>Projects</h4>
+        <div id="projects">
+            <div class='single-project' id="project1">
+                <div>
+                    <img src="./media/eye-demo-final.gif" alt="gif of eyes on screen tracking the mouse as it moves.">
+                </div>
+                <div class="project-content">
+                    <h3>Observed</h3>
+                    <p>In this google chrome extention, a statement is made on data tracking and online privacy by covering web page content with eyes that track the mouse. technologies used in this project include the p5js library, JavaScript, css, and the google chrome extension API.</p>    
+                    <a href="https://github.com/RaineT07/Observed">See the source code!</a>
+                </div>
+            </div>
+            <div class='single-project' id="project2">
+                <div>
+                    <img src="./media/extend-final.gif" alt="gif of me moving across a camera and a colorful skeleton following me.">
+                </div>
+                <div class="project-content">
+                    <h3>Extending the Body</h3>
+                    <p>This web project uses machine learning and data visualization to trace a person's path through time by leaving a trace of their past position on camera with a colorful skeleton whose colors change based on how old they are. Technologies used in this project include the p5js library, the ML5 library, and JavaScript.</p>
+                    <a href="https://openprocessing.org/sketch/2069611">Try it here!</a>
+                </div>
+            </div>
+            <div class='single-project' id="project3">
+                <div>
+                    <img src="./media/adventure-final.gif" alt="gif of a mobile app prototype for android.">
+                </div>
+                <div class="project-content">
+                    <h3>pocket adventure app</h3>
+                    <p>This mobile app prototype for android acts as a choose your own adventure style game using swipe-based controls. Adventures the user goes on can also be stored and viewed later. Technologies used in this project include Dart, Flutter, and dart packages including Carousel Slider and Google Fonts.</p>    
+                    <a href="https://github.com/RaineT07/pocket-adventure">See the source code!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="gallery">
+        <h4>Gallery</h4>
+        <div id="gallery-content">
+            <div id="gallery1" title="Observed demo">
+                <img src="./media/eye-demo-final.gif" alt="gallery image 1">
+            </div>
+            <div id="gallery2" title="extend the body demo">
+                <img src="./media/extend-final.gif" alt="gallery image 2">
+            </div>
+            <div id="gallery3" title="choose your own adventure demo">
+                <img src="./media/adventure-final.gif" alt="gallery image 3">
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>Wow! you've reached the end of the page. Thanks for visiting!</p>
+        <button id="returnToTop">Back to top.</button>
+    </div>
+</body>
+</html>
